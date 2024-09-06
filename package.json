@@ -2,13 +2,14 @@
   "name": "task-today",
   "version": "0.1.0",
   "private": true,
-  "main": "./src/main.js",
+  "main": "./public/electron.js",
+  "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "react": "17",
-    "react-dom": "17",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
     "yarn": "^1.22.22"
@@ -18,8 +19,16 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-
-    "electron": "electron ."
+    "electron": "electron .",
+    "dist": "electron-builder"
+  
+  },
+  "build": {
+    "appId": "com.example.tasktoday",
+    "productName": "task today",
+    "directories": {
+      "output": "dist"
+    }
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +49,8 @@
     ]
   },
   "devDependencies": {
-    "electron": "^32.0.2"
+    "electron": "^32.0.2",
+    "electron-builder": "^25.0.5",
+    "electron-is-dev": "^3.0.1"
   }
 }
