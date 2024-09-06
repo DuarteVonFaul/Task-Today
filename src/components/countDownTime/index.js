@@ -32,13 +32,12 @@ function CountdownTimer({ time, disabled }) {
 
   return (
     <div style={{ display: !disabled ? 'block' : 'none', width: '200px', margin: '0 auto' }}>
-      <h1>Contador de Tempo</h1>
       <CircularProgressbar
         value={percentage}
         text={formatTime(remainingTime)}
         styles={buildStyles({
           textSize: '16px',
-          pathColor: `rgba(62, 152, 199, ${percentage / 100})`,
+          pathColor: `rgb(40, 30, 185)`,
           textColor: '#f88',
           trailColor: '#d6d6d6',
           backgroundColor: '#3e98c7',
