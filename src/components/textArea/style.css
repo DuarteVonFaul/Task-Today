@@ -1,0 +1,10 @@
+.text-area{
+    border: none;
+    border-radius: 4px;
+    font: bold;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px 20px;
+
+}

@@ -1,0 +1,26 @@
+.button {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: rgba(40, 30, 185, 0.902);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px;
+  
+    }
+  
+.button span{
+    font-size: 30px;
+}
+
+.button:active {
+    background-color: rgb(90, 90, 90);
+    color: rgb(254, 254, 254);
+    box-shadow: 2px 2px 5px rgb(40, 30, 185);
+    transform: translateY(4px);
+}

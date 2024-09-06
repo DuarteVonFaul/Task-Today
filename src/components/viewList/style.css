@@ -1,0 +1,29 @@
+.view-list {
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+
+.item {
+    position: relative;
+    left: -20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(74, 73, 73);
+    border-radius: 3px;
+    margin: 8px 0px;
+    box-shadow: 3px 3px 2px rgb(145, 145, 145);
+}
+
+.item button {
+    float: right;
+    width: 20px;
+    height: 20px;
+    background:none;
+}
+
+.item.is-completed {
+    box-shadow: 3px 3px 2px chartreuse;
+}
